@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
+console.log("Testing CI with a Pull Request");
 const tasksRouter = require('./routes/tasks');
 
 app.get('/', (req, res) => {
